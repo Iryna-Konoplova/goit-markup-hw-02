@@ -1,0 +1,125 @@
+/* основной цвет для всех заголовков (кроме h1) и навигации    #212121
+вспомогательный цвет контакты и абзаци     #757575
+цвет акцент (кнопки, лого, ховер, фокус)   #2196F3
+h1, подпись кнопки, адресс, лого           #FFFFFF
+контакты в футоре                          rgba(255, 255, 255, 0.6)
+основной цвет фона   #E5E5E5
+цвет фона хедора     #FFFFFF
+секция наша команда  #F5F4FA
+секция 1 и футор     #2F303A
+*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* logo */
+.logo {
+  color: var(--accent-color);
+}
+.logo-header {
+  color: #000000;
+}
+.logo-footer {
+  color: #ffffff;
+}
+
+/* site-naw */
+
+.site-naw .link {
+  color: var(--title-text-color);
+}
+.site-naw .link:hover,
+.site-naw .link:focus {
+  color: var(--accent-color);
+}
+.site-naw .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-header a {
+  color: var(--primary-text-color);
+}
+.contacts-header a:hover,
+.contacts-header a:focus {
+  color: var(--accent-color);
+}
+
+/* section hero */
+
+.hero-title {
+  color: #ffffff;
+}
+.button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* section benefits */
+
+.benefits h3 {
+  color: var(--title-text-color) 21;
+}
+.benefits p {
+  color: var(--primary-text-color);
+}
+
+/* section preview */
+
+.preview > h2 {
+  color: var(--title-text-color);
+}
+
+/* section command */
+
+.command > h2 {
+  color: var(--title-text-color);
+}
+.command h3 {
+  color: var(--title-text-color) 1;
+}
+.command p {
+  color: var(--primary-text-color);
+}
+
+/* section portfolio */
+
+.portfolio h2 {
+  color: var(--title-text-color);
+}
+.portfolio p {
+  color: var(--primary-text-color);
+}
+.button-portfolio {
+  background: #f5f4fa;
+  color: var(--title-text-color);
+}
+.button-portfolio:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+/* address */
+
+address {
+  color: #ffffff;
+}
+address > a {
+  color: rgba(255, 255, 255, 0.6);
+}
+address a:hover,
+address a:focus {
+  color: var(--accent-color);
+}
